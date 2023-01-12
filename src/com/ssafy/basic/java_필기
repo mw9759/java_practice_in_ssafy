@@ -1,0 +1,83 @@
+## Java 입출력
+
+## 표준 입출력
+-- 키보드 : System.in
+-- 모니터 : System.out
+
+## 표준 입출력 대상 변경 
+-- System.setIn()
+-- System.setOut()
+
+## 입력 스트림
+-- java.util.Scanner
+-- java.io.BufferedReader
+
+## 출력 스트림
+
+## java.util.Scanner
+-- 입력 스트림
+-- 데이터 형변환처리 편리
+-- 대량 데이터 처리시에는 수행시간 비효율적
+-- new Scanner(InputStream)
+-- new Scanner(File source)
+-- new Scanner(String)
+
+## Scanner 주요 메서드 
+-- nextInt() : int, white space 문자 만나면 처리
+-- nextDouble(): double, white space 문자 만나면 처리
+-- next() : String, white space 문자 만나면 처리
+-- nextLine() : String, 개행문자(enter) 만나면 처리, 공백, tab 등 띄워쓰기 허용
+
+## 소스코드 파일구조
+1. package 선언문
+  >> package com.ssafy.io;
+2. import 선언문
+  >> import java.util.Scanner; --> 권장: 가독성이 더 높다.
+  >> import java.util.*;
+3. class 선언문
+  >> public calss 클래스이름{
+  		// 멤버변수
+  		// 메서드
+  		// 생성자
+  	}
+  	
+  	
+ ## 실습: 알고리즘 2문제 풀이
+ 1. 백준 2563_색종이
+ 2. 본인이 풀수있는 레벨 문제 선택
+ 
+ ## 자바 주석문
+ 1. //한줄 주석
+ 2. /*여러줄 주석*/
+ 3. API 문서 주석
+ -- 개발시에 도움말 주석
+ -- 형식: /** 도움말 내용 */
+ -- 선언위치:
+ 		클래스 선언문 앞
+ 		멤버변수 선언문 앞
+ 		메서드 선언문 앞
+ 		생성자 선언문 앞
+ -- 문서전용 어노테이션
+ 		@author 개발자이름
+ 		@version ver.1.0
+ 		@parm 매개변수명 설명
+ 		@return 반환값 설명
+ 		.....
+ -- 도움말 내용 구성요소
+ 		텍스트
+ 		html tag
+ 		문서전용 어노테이션
+ 		
+ 		
+ 		
+ 		
+ 		
+T = int(input())
+for test_case in range(1, T + 1):
+	d, a, b, f = map(int, input().split())
+	#거리 = 속력*시간
+    #시간 = 거리/속력
+	time = d/(a+b)
+    #파리의 이동거리 = 파리속력*시간(기차가 부딪친)
+	answer = f*time
+	print('#'+str(test_case), answer)
