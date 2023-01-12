@@ -1,0 +1,50 @@
+## Web Architecture
+---1  View
+		: 이용자 >> FrontEnd
+					-HTML : 화면구조
+					-CSS : 화면표현
+					-JAVAScript : 기능(이벤트처리)
+								: 동적화면처리
+					-JS 라이브러리 : jquary
+								: vue.js
+						
+---2  Controller
+		: 이용자 >> 요청제어
+					-Servlet: JAVA기술
+					-Spring Framework
+					-Sprint Boot(스프링 프웍보다 이지)
+																	*******************************DTO(Data Transfer Object)*****************************
+                                            												>>>>>컨트롤러 모델 왓다갓다<<<<<
+---3  Model
+		--Service
+				>> 업무로직(서비스)
+		--DAO
+				>> Data Base Access Object(DBCRUD)
+				>> JDBC API(MyBatis Framework), JPA
+---4  RDBMS
+		>> 테이블
+			- MySQL
+			- SQL
+			
+---WEB SERVER
+		
+			
+##웹 개발환경
+-- tomcat( https://spring.io/tools )
+		>> web server + web
+		>> Tomcar(WAS)무료
+			->>9.X
+		>> 다운로드 .zip 압축해제 설치
+		>> 설치폴더-> C:\SSAFY\tomcat
+		>> 서버실행: C:\ssafy\tomcat\bin> startup.bat
+		>> 서버중지: C:\ssafy\tomcat\bin> shutdown.bat
+		>> 서버요청: http://localhost:8080
+-- sts( https://spring.io/ )
+		>>version_ 3.9.14
+		>>mm에 링크
+		>> 설치폴더-> C:\SSAFY\sts
+		
+		
+		
+## <b> 굵은글씨 </b>
+## <img src = "logo.jpg"/>
